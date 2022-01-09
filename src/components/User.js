@@ -1,8 +1,10 @@
 import React from "react"
 
 class User extends React.Component {
-    render () {
+    render() {
+        console.log("UserProps passing down from App Component to User Component", this.props);
         const { user } = this.props;
+
         return (
             <div id="userCard">
                 <img src={user.avatar_url} />
